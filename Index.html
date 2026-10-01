@@ -4,14 +4,14 @@
   <!-- Configuração da página e conexão com os arquivos externos. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Bussola Turismo — v0.3</title>
-  <link rel="stylesheet" href="/style.css">
+  <title> BÚSSOLA TURISMO — v0.3</title>
+  <link rel="stylesheet" href="style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <!-- Cabeçalho: nome da agência e menu de navegação. -->
   <header>
-    <h1> BUSSOLA TURISMO</h1>
+    <h1> BÚSSOLA TURISMO</h1>
     <nav aria-label="Menu principal">
       <button id="botao-inicio" type="button">Início</button>
       <button data-abrir="janela-destinos" type="button">Destinos</button>
@@ -40,27 +40,45 @@
       <h2>Pacotes disponíveis</h2> <!-- adicionar pacotes ex " bussola ao sul "180" -->
       <p>Preços fictícios para um trabalho acadêmico.</p>
       <div class="destinos" id="lista-destinos"></div>
+      <select id="filtro-preco" aria-label="Filtrar pacotes por preço">
+        <option value="">Todos os preços</option>
+        <option value="1000">Até R$ 1.000</option>
+        <option value="2000">Até R$ 2.000</option>
+        <option value="3000">Até R$ 3.000</option>
+      </select>
+        <!-- adcionar tipo de viagem ex: "bussola ao sul" "bussola ao norte" "bussola ao leste" "bussola ao oeste" -->
     </section>
   </main>
 
-  <!-- Janela de destinos: direciona para os pacotes da mesma página. -->
-  <dialog id="janela-destinos" aria-labelledby="titulo-destinos">
-    <button class="fechar" data-fechar type="button" aria-label="Fechar destinos">Fechar</button>
-    <h2 id="titulo-destinos">Destinos</h2>
-    <p>Oferecemos pacotes para Porto Alegre, Buenos Aires e Santiago.</p>
-    <button id="ver-pacotes" type="button">Ver pacotes</button>
-  </dialog>
-
-  <!-- Janela com uma descrição simples da agência. -->
-  <dialog id="janela-sobre" aria-labelledby="titulo-sobre">
-    <button class="fechar" data-fechar type="button" aria-label="Fechar sobre nós">Fechar</button>
-    <h2 id="titulo-sobre">Sobre nós</h2>
-    <p>Somos uma agência fictícia que ajuda você a planejar suas férias.</p>
-  </dialog>
+    <!-- Janelas modais: informações detalhadas sobre destinos e sobre a agência. -->
+    <div class="janela-modal" id="janela-destinos" aria-hidden="true">
+        <h1>OFERTAS</h1>
+      <div class="conteudo-modal">
+        
+        <h2>Pacote Bússola "0"</h2>
+        <p>Pacote Bússola "180" </p>
+        <div id="detalhes-destino"></div>
+      </div>
+      <div class="conteudo-modal">
+        
+        <h2>Pacote Bússola "90"</h2>
+        <p>Pacote Bússola "180" </p>
+        <div id="detalhes-destino"></div>
+        <div class="conteudo-modal">
+        
+        <h2>Pacote Bússola "250" </h2>
+        <p>Pacote Bússola "180" </p>
+        <div id="detalhes-destino"></div>
+        <div class="conteudo-modal">
+        
+        <h2>Pacote Bússola "180"</h2>
+        <p> Pronto para conhecer as capitais do sul do continente? O pacote inclui hospedagem, transporte e roteiro completo. 
+            Pensado para quem busca uma experiência autêntica e inesquecível cheio de aventuras rico em cultura e natureza. </p>
+        <div id="detalhes-destino"></div>
+    </div>
   <footer>
     <p> criado por Guilherme, Carlos, Anderson</p>
   </footer>
 
 </body>
 </html>
-
