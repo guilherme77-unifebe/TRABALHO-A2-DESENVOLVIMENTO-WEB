@@ -1,0 +1,39 @@
+/* Estilo geral: fonte, cores e remoção da margem padrão. */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #222;
+}
+
+/* Centraliza o conteúdo e limita a largura em telas grandes. */
+header, main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+header { border-bottom: 1px solid #ccc; }
+
+/* Centraliza apenas o título principal da agência. */
+header h1 { text-align: center; }
+
+/* Permite que o menu ocupe várias linhas em telas pequenas. */
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+button { padding: 8px 12px; cursor: pointer; }
+
+/* Destaca o elemento selecionado ao navegar pelo teclado. */
+button:focus-visible {
+  outline: 3px solid #2463ad;
+}
+
+/* Espaçamento das seções e fundo simples do carrossel. */
+section { margin-bottom: 28px; }
+.carrossel { padding: 24px; background: #eee; text-align: center; }
+
+/* Cartões lado a lado, com quebra de linha quando necessário. */
+.destinos { display: flex; flex-wrap: wrap; gap: 12px; }
+article { border: 1px solid #ccc; padding: 16px; flex: 1 1 200px; }
+
+/* Janelas modais e escurecimento do fundo. */
+dialog { width: min(400px, 80vw); padding: 20px; border: 1px solid #888; }
+dialog::backdrop { background: rgba(0, 0, 0, 0.4); }
+.fechar { float: right; }
