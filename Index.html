@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Bussola Turismo — v0.3</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <!-- Cabeçalho: nome da agência e menu de navegação. -->
   <header>
-    <h1>Minha agência de viagens</h1>
+    <h1> BUSSOLA TURISMO</h1>
     <nav aria-label="Menu principal">
       <button id="botao-inicio" type="button">Início</button>
       <button data-abrir="janela-destinos" type="button">Destinos</button>
@@ -37,7 +37,7 @@
 
     <!-- Os cartões são criados a partir da lista no arquivo script.js. -->
     <section id="destinos">
-      <h2>Pacotes disponíveis</h2>
+      <h2>Pacotes disponíveis</h2> <!-- adicionar pacotes ex " bussola ao sul "180" -->
       <p>Preços fictícios para um trabalho acadêmico.</p>
       <div class="destinos" id="lista-destinos"></div>
     </section>
@@ -47,7 +47,7 @@
   <dialog id="janela-destinos" aria-labelledby="titulo-destinos">
     <button class="fechar" data-fechar type="button" aria-label="Fechar destinos">Fechar</button>
     <h2 id="titulo-destinos">Destinos</h2>
-    <p>Oferecemos pacotes para Rio de Janeiro, Buenos Aires e Santiago.</p>
+    <p>Oferecemos pacotes para Porto Alegre, Buenos Aires e Santiago.</p>
     <button id="ver-pacotes" type="button">Ver pacotes</button>
   </dialog>
 
@@ -57,7 +57,9 @@
     <h2 id="titulo-sobre">Sobre nós</h2>
     <p>Somos uma agência fictícia que ajuda você a planejar suas férias.</p>
   </dialog>
-
+  <footer>
+    <p> criado por Guilherme, Carlos, Anderson</p>
+  </footer>
 
 </body>
 </html>
